@@ -1,9 +1,7 @@
 version: '3'
 services:
   jupiter:
-    # image: jupyter/tensorflow-notebook
-    image: test
-    # build: ./tf-notebook
+    build: ./tf-notebook
     ports:
       - 8668:8888
     command: ["start-notebook.sh", "--NotebookApp.password='sha1:40825afef661:36e353b6365c575d094eddde2a181fad45432fce'"]
